@@ -1,0 +1,32 @@
+
+<mat-grid-list cols="2" rowHeight="fit" gutterSize ="30px" style = "margin-top: 50px; margin-bottom:0px;height:85%">
+   
+    <mat-grid-tile>
+        <button routerLink="/detail/11" style = "width:80%;height: 100%;cursor:grabbing;background-image: url('assets/images/day.gif');background-repeat: no-repeat;background-position-y: 40%; background-size: cover; border-radius: 20px;">
+            <h2 style = "font-size: large; height:100%;padding-top: 5%;"> OLL OF THE DAY </h2>
+        </button>
+    </mat-grid-tile>
+
+
+    <mat-grid-tile>
+        <youtube-player 
+            videoId="SVRYcrLfCUY" 
+            suggestedQuality="highres" 
+            [height]="270" 
+            [width]="450" 
+            [startSeconds]="4"
+            [endSeconds]="8">
+        </youtube-player>
+     </mat-grid-tile>
+
+
+    <mat-grid-tile>
+         <img src = "assets/images/home.gif" style = "border-radius: 200px;">
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+        <button routerLink="/detail/11" style = "width:80%;height: 100%;cursor:grabbing;background-image: url('assets/images/day.gif');background-repeat: no-repeat;background-position-y: 40%; background-size: cover; border-radius: 20px;">
+            <h2 style = "font-size: large; height:100%;padding-top: 5%;"> PLL OF THE DAY </h2>
+        </button>
+    </mat-grid-tile>
+</mat-grid-list>

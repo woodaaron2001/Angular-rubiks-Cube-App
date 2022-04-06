@@ -1,0 +1,22 @@
+  <div style = "display: flex; flex-direction: column; justify-content: space-around; height:100%;">
+        <p *ngIf="stage==1|| stage==2 || stage == 3 || stage == 4" class = "clock"> {{time}}</p>
+
+
+        <p *ngIf="stage==4 || stage == 0 || stage == 7 || stage == 8"> New scramble:</p>
+        <p *ngIf="stage==4 || stage == 0 || stage == 7 || stage == 8" class = "scramble">{{scramble}} </p>
+
+        <p *ngIf="stage==0"> Press space to start inspection </p>
+
+        <p *ngIf="stage==1"> Hold space when inspected </p>
+      
+        <p *ngIf="stage==2"> Wait 2 seconds </p>
+
+        <p *ngIf="stage==3"> GO! </p>
+
+        <p *ngIf="stage==4"> Congratulations! Time: {{time}} </p>
+
+        
+ 
+        <p *ngIf="stage==7"> Inspection time exceeded!! <br> Press space to retry </p>
+        <p *ngIf="stage==8"> You must wait 2 seconds!! <br><br><br> Press space to retry </p>
+    </div>

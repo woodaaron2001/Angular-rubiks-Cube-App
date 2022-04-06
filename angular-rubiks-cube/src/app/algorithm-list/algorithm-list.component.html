@@ -1,0 +1,23 @@
+<h2 style = "text-align: center; font-size: 40px;margin-top: 10px;">{{algoType}}</h2>
+
+<mat-card *ngFor="let algo of algoList" routerLink="/detail/{{algo.id}}" style = "margin: 10px;">
+    <span>
+
+        <mat-card-title>
+            <div style = "display: flex;">
+                <img src = "assets/images/perm.png" style = "height: 25px;margin-right: 10px;">
+                {{algo.name}} 
+            </div>
+        </mat-card-title>
+
+        <mat-card-content style = "font-size: 20px;">
+            {{algo.moves}}
+        </mat-card-content>
+
+        <mat-card-content align="end">
+            <img src = "assets/images/template.png" style = "height: 50px;margin-right: 10px;">
+        </mat-card-content>
+
+
+    </span>
+</mat-card>

@@ -1,0 +1,27 @@
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+
+.clock{
+    text-align: center;
+    font-family: Orbitron;
+    font-size: 200px;
+    margin-top: 10%;
+    margin-bottom: 50px;
+}
+
+.scramble{
+    text-align: center;
+    font-family: Orbitron;
+    font-size: 100px;
+}
+
+p{
+    text-align: center;
+    font-size: 40px;
+    padding:20px;
+}

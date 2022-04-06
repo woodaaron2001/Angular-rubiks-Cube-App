@@ -1,0 +1,8 @@
+<h2 style = "text-align: center; font-size: 40px;margin-top: 10px;"> Choose a category </h2>
+<mat-grid-list cols="2" rowHeight="fit" gutterSize ="30px" style = "margin-top: 50px; margin-bottom:0px;height:85%">
+    <mat-grid-tile *ngFor="let category of categories">
+        <button routerLink = "/categories/{{category}}" style = "width:80%;height: 100%;cursor:grabbing;background-image: url('assets/images/{{category}}.png');background-repeat: no-repeat;background-position-y: 80%;background-position-x: 50%; background-size: 30%; border-radius: 20px;">
+            <h2 style = "font-size: large; height:100%;padding-top: 5%;"> {{category}} </h2>
+        </button>
+    </mat-grid-tile>
+</mat-grid-list>

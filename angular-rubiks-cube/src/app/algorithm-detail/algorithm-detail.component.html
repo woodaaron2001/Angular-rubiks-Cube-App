@@ -1,0 +1,17 @@
+<div *ngIf="algo" style = "display: flex; flex-direction: column; justify-content: space-between; height: 90%;">
+    <h2 style = "text-align: center;font-size: 40px;margin-top: 20px;">{{algo.name}} Details</h2>
+    <p style = "font-family: Orbitron;font-size: 80px;text-align: center;margin:40px"> {{algo.moves}} </p>
+    <div style="display: flex;justify-content: space-around;">
+      <img src = "assets/images/test.png" style = "width: 300px;">
+      <youtube-player
+        videoId="9r_HqG4zSbk" 
+        suggestedQuality="highres" 
+        [height]="270" 
+        [width]="450" 
+        [startSeconds]="18"
+        [endSeconds]="30">
+      </youtube-player>
+    </div>
+
+</div>
+<button type="button" (click)="goBack()">go back</button>
